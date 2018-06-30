@@ -1,4 +1,3 @@
-#2-3-1
 def AND(x1, x2):
     w1, w2, theta = 0.5, 0.5, 0.7
     temp = x1*w1 + x2*w2
