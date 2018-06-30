@@ -1,6 +1,6 @@
 import numpy as np
 
-def AND(x1, x2):
+def NAND(x1, x2):
     x = np.array([x1, x2])
     w = np.array([-0.5, -0.5])
     b = 0.7
@@ -12,4 +12,4 @@ def AND(x1, x2):
 
 a = input().split()
 a[0], a[1] = float(a[0]), float(a[1])
-print(AND(a[0], a[1]))
+print(NAND(a[0], a[1]))
