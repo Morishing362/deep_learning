@@ -10,6 +10,6 @@ def OR(x1, x2):
     if temp > 0:
         return 1
 
-a = input().split()
-a[0], a[1] = float(a[0]), float(a[1])
-print(OR(a[0], a[1]))
+# a = input().split()
+# a[0], a[1] = float(a[0]), float(a[1])
+# print(OR(a[0], a[1]))

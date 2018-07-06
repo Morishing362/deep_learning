@@ -36,6 +36,6 @@ def XOR(x1, x2):
     y = AND(s1, s2)
     return y
 
-a = input().split()
-a[0], a[1] = float(a[0]), float(a[1])
-print(XOR(a[0], a[1]))
+# a = input().split()
+# a[0], a[1] = float(a[0]), float(a[1])
+# print(XOR(a[0], a[1]))

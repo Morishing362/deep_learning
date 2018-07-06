@@ -1,11 +1,11 @@
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
-def sigmoid_func(x):
+def sigmoid(x):
     return 1/(1 + np.exp(-x))
 
-a = np.linspace(-5.0, 5.0, 100)
-b = sigmoid_func(a)
+# a = np.linspace(-5.0, 5.0, 100)
+# b = sigmoid(a)
 
-plt.plot(a, b)
-plt.show()
+# plt.plot(a, b)
+# plt.show()
