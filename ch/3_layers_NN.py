@@ -12,7 +12,7 @@ def init_network():
 
     return network
 
-def forward (netwrok, x):
+def forward(netwrok, x):
     W1, W2, W3 = netwrok['W1'], netwrok['W2'], netwrok['W3']
     b1, b2, b3 = netwrok['b1'], netwrok['b2'], netwrok['b3']
 
