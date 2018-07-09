@@ -4,6 +4,7 @@ from dataset.mnist import load_mnist
 import numpy as np
 from PIL import Image
 import pickle
+import pandas as pd
 
 import sigmoid_func
 import softmax_func
@@ -12,6 +13,12 @@ def get_data():
     (x_train, t_train), (x_test, t_test) = \
         load_mnist(normalize=True, flatten=True, one_hot_label=False)
     return x_test, t_test
+    # normalizeは正規化、falttenは一次元配列化、one_hot_labelはラベルを特徴量(0 or 1)にするか数値(0, 1, 2,...)にするか。
+
+# # csv書き出し
+# def data_to_csv(x_test, t_test):
+#     df = pd.DataFrame(x_test, t_test)
+#     df.to_csv('x-t_test.csv')
 
 def init_network():
     os.getcwd()
@@ -43,3 +50,6 @@ for i in range (len(x)):
         accuracy_cnt += 1
 
 print('Accuracy : ', float(accuracy_cnt)/len(x))
+
+# x_test, t_test = get_data()
+# data_to_csv(x_test, t_test)
