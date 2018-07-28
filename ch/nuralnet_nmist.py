@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('c:/Users/moris/OneDrive/kaihatsu_drive/Python/deep_learning')
+sys.path.append(os.getcwd())
 from dataset.mnist import load_mnist
 import numpy as np
 from PIL import Image
@@ -21,8 +21,7 @@ def get_data():
 #     df.to_csv('x-t_test.csv')
 
 def init_network():
-    os.getcwd()
-    with open('C:/Users/moris/OneDrive/kaihatsu_drive/Python/deep_learning/ch/sample_weight.pkl', 'rb') as f:
+    with open(os.path.join(os.getcwd(),'ch/sample_weight.pkl'), 'rb') as f:
         network = pickle.load(f)
     return network
 

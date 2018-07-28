@@ -1,8 +1,9 @@
 import sys, os
-sys.path.append('c:/Users/moris/OneDrive/kaihatsu_drive/Python/deep_learning')
+sys.path.append(os.getcwd())
 from dataset.mnist import load_mnist
 import numpy as np
 from PIL import Image
+import random
 
 def image_show(img):
     pil_img = Image.fromarray(np.uint8(img))
@@ -11,8 +12,9 @@ def image_show(img):
 (x_train, t_train), (x_test, t_test) = \
 load_mnist(flatten=True, normalize=False)
 
-img = x_train[0]
-label = t_train[0]
+r = random.randrange(10000)
+img = x_train[r]
+label = t_train[r]
 print(label)
 
 print(img.shape)

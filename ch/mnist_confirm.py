@@ -1,5 +1,5 @@
 import sys, os
-sys.path.append('c:/Users/moris/OneDrive/kaihatsu_drive/Python/deep_learning')
+sys.path.append(os.getcwd())
 from dataset.mnist import load_mnist
 
 import pandas as pd
