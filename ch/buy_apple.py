@@ -1,6 +1,3 @@
-import sys, os
-sys.path.append(os.pardir)
-
 class MulLayer:
     def __init__(self):
         self.x = None
